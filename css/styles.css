@@ -354,6 +354,10 @@ body {
     background-color: var(--text-bg);
 }
 
+.activity-list .picture {
+    display: block;
+}
+
 /* Section */
 
 .team {
