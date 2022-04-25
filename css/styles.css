@@ -78,7 +78,7 @@ body {
     align-items: center;
 }
 
-.page-header.portfolio-site {
+.page-header {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -169,6 +169,7 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 2px;
+    bottom: -1px;
 
     background-color: var(--accent-color);
 }
@@ -785,13 +786,15 @@ body {
     height:100%;
 
     background-color: var(--backdrop);
+    transition: opacity 350ms, visibility 350ms;
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-
+    visibility: hidden;
 }
+
 
 .modal {
     position: absolute;
